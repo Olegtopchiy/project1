@@ -6,4 +6,8 @@
  * Time: 20:15
  */
   $test = 5;
-  
+  $name = 'Oleg';
+   echo $name;
+   echo "\n";
+   $name = 4;
+   echo $test;
