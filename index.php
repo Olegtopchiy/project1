@@ -36,3 +36,51 @@ function factorial($n) {
     }
 }
 echo factorial(5);
+echo "\n";
+
+$custom = function ($a, $b) {
+    return $a * $b;
+};
+
+var_dump($custom(3, 5));
+
+$custom = function ($a, $b) {
+    return $a / $b;
+};
+
+var_dump($custom(3, 5));
+
+/** Cортировка массива  */
+
+
+$array = [1, 0, 2];
+var_dump($array);
+usort ($array, function ($a, $b){
+    return $a <=> $b;
+});
+var_dump($array);
+
+/** Замыкание в анонимной функции  */
+$text = 'Multiply';
+$closure = function ($a, $b) use ($text){
+    echo $text;
+    echo "\n";
+    echo $a * $b;
+    echo "\n";
+
+};
+$closure (3, 5);
+$text = 'ekrewrw';
+$closure (3, 6);
+echo "\n";
+echo "\n";
+$closure = function ($a, $b){
+    global $text;
+    echo $text;
+    echo "\n";
+    echo $a * $b;
+    echo "\n";
+};
+$closure (3, 5);
+$text = 'ekrewrw';
+$closure (3, 6);
