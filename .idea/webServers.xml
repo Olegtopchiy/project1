@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0f9ea271-8bb3-40e9-8b20-413f2a3f90cd" name="PHPProj1" url="http://94.130.75.108">
+        <fileTransfer host="94.130.75.108" port="22" rootFolder="/home/php1704_4/web/php1704-4.dev.asdat.org/public_html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
