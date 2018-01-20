@@ -1,6 +1,6 @@
 <?php
-function Fib ($sequence) {
-    if $sequence < 3 {
+function Fib ($sequence){
+    if ($sequence < 3) {
         return $sequence;
     }
     else {
@@ -8,6 +8,6 @@ function Fib ($sequence) {
     }
 }
 
-for (i=1, i <=20; i++) {
-    echo fib($i);
+for ($sequence = 1; $sequence <=20; $sequence++){
+    echo (Fib($sequence) ", ");
 }
