@@ -1,2 +1,18 @@
-fuwqhduhwqdwqhduhqdhwqdhq
-2132132131231
+ $test = 5;
+  $name = 'Oleg';
+   echo $name;
+   echo "\n";
+   $name = 4;
+   echo $test;
+echo "\n";
+echo $lastname;
+var_dump($lastname);
+echo "\n";
+var_dump(true);
+var_dump(false);
+var_dump(KT);
+define ('DB_NAME', 'test_db');
+$number = 5 / 5.0;
+var_dump($number);
+var_dump(test);
+var_dump(DB_NAME);
