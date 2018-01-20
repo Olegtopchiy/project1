@@ -9,5 +9,9 @@ function Fib ($sequence){
 }
 
 for ($sequence = 1; $sequence <=20; $sequence++){
-    echo (' ', Fib($sequence));
+    echo (Fib($sequence) . ", ");
 }
+echo "</br>";
+echo "</br>";
+
+echo "Четвертое по последовательности число Фибоначчи  - " . (Fib (4));
