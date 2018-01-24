@@ -1,6 +1,6 @@
 <?php
 function Prime ($n){
-    if ($n == 1) {
+    if ($n == 41) {
         return 0;
     }
     else {
@@ -8,10 +8,11 @@ function Prime ($n){
     }
 }
 
-for ($n = 2; $n <=20; $n++){
+for ($n = 2; $n <= 43; $n++){
      if ($n%$n == 0){
     echo (Prime($n) . ", ");
      }
 }
 echo "</br>";
 echo "</br>";
+
