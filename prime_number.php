@@ -1,13 +1,17 @@
 <?php
-    function Prime($number) {
-        if ($number == 1) {
-            return false;
-        }
-    for (i=2; i*i<=$number; $number++){
-            if ($number % 2 == 0){
-                return false;
-                }
-    else return true;
-    };
+function Prime ($n){
+    if ($n == 1) {
+        return 0;
     }
+    else {
+        return $n*$n-$n+41;
+    }
+}
 
+for ($n = 2; $n <=20; $n++){
+     if ($n%$n == 0){
+    echo (Prime($n) . ", ");
+     }
+}
+echo "</br>";
+echo "</br>";
