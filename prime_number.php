@@ -1,18 +1,20 @@
 <?php
-function Prime ($n){
-    if ($n == 41) {
-        return 0;
+function Prime_numbers ($n, $d) {
+    if ($d == 1) {
+        return 1;
     }
     else {
-        return $n*$n-$n+41;
+        if ($n % $d == 0)
+            return 0;
+        return Prime_numbers($n, $d - 1);
     }
 }
 
-for ($n = 2; $n <= 43; $n++){
-     if ($n%$n == 0){
-    echo (Prime($n) . ", ");
-     }
+function prime($n) {
+    return Prime_numbers($n, $n-1);
 }
-echo "</br>";
-echo "</br>";
 
+for ($c = 2; $c <= 100; $c++)
+    if (prime($c))
+        echo $c . "<br>";
+?>
