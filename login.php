@@ -38,4 +38,3 @@ if($isNotGuest) {
         <input type="submit" value="send"/>
     </form>
     <?php
-}
