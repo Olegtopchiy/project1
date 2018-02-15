@@ -1,0 +1,12 @@
+AddDefaultCharset UTF-8
+DirectoryIndex index.php index.html
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^WWW\.php1704-4.dev.asdat.org$ [NC]
+RewriteRule ^(.*)$ http://php1704-4.dev.asdat.org/$1 [R=301,L]
+RewriteRule ^index.htm$ index.php [R=302,NC,L]
+#RewriteRule ^([A-Za-z0-9\-]+)/?$ index.php?path=$1 [L]
+#RewriteRule ^([0-9a-z\-]{2,})\/([/\d]+)/?$ index.php?category=$1&id=$2 [NC,L]
+RewriteRule ^([\/category\/15]+)/?$ index.php?view=category&id=15 [L]
+RewriteRule ^([\/news\/latest\/p2]+)/?$ index.php?view=news&type=latest&page=2 [L]
+RewriteRule ^([\/best\-article])\/([/\d]+)/?$ index.php?path=$1&id=$2 [NC,L]
